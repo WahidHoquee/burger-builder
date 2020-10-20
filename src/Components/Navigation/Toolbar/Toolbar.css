@@ -1,0 +1,76 @@
+.Toolbar {
+    height: 70px;
+    width: 100%;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cd6133;
+}
+
+.Menu {
+    height: 60px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.MenuIcon {
+    position: relative;
+    margin-left: 10px;
+}
+.MenuIcon,
+.MenuIcon::before,
+.MenuIcon::after {
+    display: inline-block;
+    height: 2px;
+    width: 3rem;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+.MenuIcon::before,
+.MenuIcon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.MenuIcon::before {
+    top: -0.8rem;
+}
+.MenuIcon::after {
+    top: 0.8rem;
+}
+.Menu:hover .MenuIcon::before {
+    top: -1rem;
+}
+.Menu:hover .MenuIcon::after {
+    top: 1rem;
+}
+.ClickedMenuIcon {
+    background-color: transparent;
+}
+.ClickedMenuIcon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+.ClickedMenuIcon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+.Logo {
+    height: 80%;
+}
+
+@media (max-width: 499px) {
+    .DesktopVersion {
+        display: none;
+    }
+}

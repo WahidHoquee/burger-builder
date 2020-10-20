@@ -1,0 +1,34 @@
+.NavigationItem a {
+    padding: 10px 15px;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: saddlebrown;
+}
+.NavigationItem a:hover,
+.NavigationItem a.active {
+    color: coral;
+}
+
+@media (min-width: 500px) {
+    .NavigationItem {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .NavigationItem a {
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .NavigationItem a:hover,
+    .NavigationItem a.active {
+        background-color: #aa4f28;
+        border-bottom: 5px solid salmon;
+    }
+}

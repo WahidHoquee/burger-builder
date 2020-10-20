@@ -1,0 +1,14 @@
+.Order{
+    width: 80%;
+    padding: 40px;
+    box-sizing: border-box;
+    border:1px solid peru;
+    margin: 20px auto;
+}
+.Order span{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #333;
+    margin: 0 10px;
+    text-transform:  capitalize
+}
